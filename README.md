@@ -1,1 +1,1 @@
-"# ssms-visualstudio-addin" 
+# ssms-visualstudio-addin 
