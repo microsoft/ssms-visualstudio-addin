@@ -32,6 +32,4 @@ Once the tool is build and deployed as described above, it will be available in
 the add-ins menu in the Dynamics 365 menu. This add-in is designed to be applied 
 on a selected designer node, so you have to open the table in the designer to 
 use it; you cannot use it directly from the Application Explorer at this time.
- 
-
 
