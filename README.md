@@ -1,10 +1,10 @@
 # ssms-visualstudio-addin
 
-This is a demo to show how to build an add-in that can be used from within teh Visual studio tooling that we 
-provide for Dynamics for Operations developers.
+This is a demo to show how to build an addin that can be used from within the Visual studio tooling that we 
+provide for Dynamics 365 for Operations developers.
 
 
-The demo is intended to be instructive, but also useful. It basically allows you to work with Dynamics 
+The addin is intended to be instructive, but also useful. It basically allows you to work with Dynamics 
 tabular objects in the Microsoft SQL Server Management Studio (SSMS) tool. It will harvest interesting metadata for
 the tabular object selected in the model view, and open a window in SSMS allowing you to do advanced queries against
 the data. The tool handles table inheritance and relations to other tables, generating the joins as required.
@@ -23,13 +23,28 @@ Once the window has been opened in SSMS you can edit as required for your purpos
 The code should be easy to build in Visual Studio once you fix up the references to
 point to the place where your product specific assemblies live. The output from a 
 successful compilation is an assembly that can subsequently be deployed using the
-encloded batch file.
+batch file that is part of the project.
 
-_Note_: You will need to restart Visual Studio to get see the new add-in.
+_Note_: You will need to restart Visual Studio to get access to the new add-in.
 
 ## Using the tool
-Once the tool is build and deployed as described above, it will be available in
-the add-ins menu in the Dynamics 365 menu. This add-in is designed to be applied 
+Once the tool is built and deployed as described above, it is available in
+the addins menu in the Dynamics 365 menu. This particular addin is designed to be applied 
 on a selected designer node, so you have to open the table in the designer to 
 use it; you cannot use it directly from the Application Explorer at this time.
+
+## Creating Add-ins of your own
+It is easy to get started writing your own addins. Just open Visual Studio, create a new project 
+and choose the template called "Developer tools Addin" from the "Dynamics 365 for Operations" set.
+This will create a project with examples of both a Mainmenu addin (i.e. an addin that is visible 
+on the Addins menu on the Dynamics 365 menu, and that is not tied to any particular metadata artifact), 
+and a Designer addin which is appears when a particular artifact is selected in the designer. There are 
+TODO comments indicating where you should put your code.
+
+
+After you have successfully compiled you solution, you can invoke the InstallToVS batch file to 
+deploy the assembly so that Visual Studio will pick it up the next time it starts.
+
+
+
 
