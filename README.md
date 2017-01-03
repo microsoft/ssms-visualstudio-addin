@@ -23,7 +23,7 @@ Once the window has been opened in SSMS you can edit as required for your purpos
 The code should be easy to build in Visual Studio once you fix up the references to
 point to the place where your product specific assemblies live. The output from a 
 successful compilation is an assembly that can subsequently be deployed using the
-batch file that is part of the project. Currently thos command file is run when the 
+batch file that is part of the project. Currently the command file is run when the 
 compilation is completed. If this is not what you want, you can change the post-build
 event command line in the Build Events tab in the project properties.
 
