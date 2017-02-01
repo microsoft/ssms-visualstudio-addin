@@ -47,6 +47,13 @@ TODO comments indicating where you should put your code.
 After you have successfully compiled you solution, you can invoke the InstallToVS batch file to 
 deploy the assembly so that Visual Studio will pick it up the next time it starts.
 
+This project has adopted the [Microsoft Open Source Code of
+Conduct](https://opensource.microsoft.com/codeofconduct/).
+For more information see the [Code of Conduct
+FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
+contact [opencode@microsoft.com](mailto:opencode@microsoft.com)
+with any additional questions or comments.
+
 
 
 
